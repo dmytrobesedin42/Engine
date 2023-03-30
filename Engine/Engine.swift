@@ -10,13 +10,12 @@
 public struct Product {
     let name: String
     let price: Double
-    public init(name: String, price:Double) {
+    public init(name: String, price: Double) {
       self.name = name
       self.price = price
     }
 }
  open class Purchases {
-     
   public  var products: [Product] = []
    open func calculateprice() -> Double {
         products.reduce(0) { $0 + $1.price }
