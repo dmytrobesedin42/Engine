@@ -15,6 +15,7 @@ public struct Product {
       self.price = price
     }
 }
+
  open class Purchases {
   public  var products: [Product] = []
    open func calculateprice() -> Double {
